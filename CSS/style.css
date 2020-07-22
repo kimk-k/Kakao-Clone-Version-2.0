@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+@import "reset.css";
+@import "status-bar.css";
+
+body{
+    background-color: white;
+    padding: 10px 20px;
+    color:#020202;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+/* 
+@import문은 다른 모듈에서 내보낸 바인딩을 가져올 때 사용
+
+- 글씨체 바꾸는 법
+1. google font에서 link or @import형식의 embed(내장) source를 붙여넣기
+2. font-family: 지정글씨체 
+
+웹이나 앱에서 완전 검은색은 사용하지 않는다.
+*/
