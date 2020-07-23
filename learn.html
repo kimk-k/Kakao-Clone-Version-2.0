@@ -1,0 +1,71 @@
+부모태그가 status-bar의 클래스 값을 가지고 있다면,
+자식태그는 status-bar__column 으로 실무에서 사용한다.
+
+- 하나의 class에 두개의 값을 줄 수 있음 ex) class="chat__avatar g-avatar"
+
+-link:css 하면 css를 연결하는 링크 자동 생성(단축키)
+
+- 브라우저마다 HTML Tag의 기본 값들이 상이함 그러므로 reset.css를 해주는 것이 좋음
+ㄴ 웹사이트에 reset.css를 치면 관련 css설정이 나온다.
+
+- @import문은 다른 모듈에서 내보낸 바인딩을 가져올 때 사용
+
+- 글씨체 바꾸는 법
+1. google font에서 link or @import형식의 embed(내장) source를 붙여넣기
+2. font-family: 지정글씨체 
+
+- 웹이나 앱에서 완전 검은색은 사용하지 않는다.
+
+- justify-content: space-between; 이것을 했는데 일정한 간격으로 띄는 것이 아닌 왜 끝과 끝으로 나눠졌을까. 
+
+- 아이콘의 사이즈는 font-size로 줄일 수 있다. -> 아이콘 또한 문자다.
+
+- css 효과
+opacity: 요소의 불투명도를 설정한다. 불투명도는 요소 뒤쪽 콘텐츠가 숨겨지는 정도로, 투명도의 반대이다.
+요소의 내용을 포함해 모든 곳에 영향을 주지만 자식 요소가 상속하지는 않는다.
+
+justify-content: 주축방향으로 다양하게 아이템들 배치
+관련 이미지 링크: velog.io/@bungouk6829/CSS의-레이아웃-Flexible-Box-Grid
+flex-start: default 값. 자식박스를 부모박스 주축의 시작점으로 배치한다.
+flex-end: 자식박스를 부모박스 주축의 끝점으로 배치한다.
+center: 자식박스를 부모박스의 중앙으로 배치한다.
+space-between: 플렉서블 박스에 빈공간이 있을 때 사용한다. 첫 번째 박스와 마지막 박스는 양쪽 끝에 붙히고, 나머지 박스는 동일한 간격으로 가운데에 정렬된다.
+space-around: 플렉서블 박스에 빈공간이 있을 때 사용한다. 단, 양쪽 끝에 있는 박스의 양옆에도 공간을 둔채 자동 정렬
+         
+align-items: 아이템들의 정렬 높낮이를 의미
+관련 이미지 링크: velog.io/@bungouk6829/CSS의-레이아웃-Flexible-Box-Grid
+flex-start: 맨 위를 기준으로 정렬
+center: 서로의 중앙을 라인으로 정렬
+stretch: default 값
+flex-end: 맨 아래 끝점에 배치
+baseline: 자식박스들을 교차축의 시작점에 배치되는 자식박스의 글자 베이스라인에 맞춰 배치
+
+cursor: 마우스 커서의 형태를 지정할 수 있다.
+관련 실험 링크: homejjang.com/09/cursor.php
+auto = I 모양
+crosshair = 십자가 모양
+default = 기본 마우스커서 모양
+pointer = 무언가를 누를 때 손가락 모양
+move = 십자가 양 끝에 화살표 모양 
+등
+
+box-sizing: 박스의 크기를 어떤 것을 기준으로 계산할지 정하는 속성
+content-box: default
+border-box: 테두리를 기준으로 크기 계산
+initial: 기본값으로 설정
+inherit: 부모 요소의 속성값을 상속 받음
+ㄴ 브라우저에게 어떤 박스의 width를 200px로 지정하고 padding-left를 20px지정하면
+그 Content width 값은 더이상 200px이 되지 않고 180px이 된다.
+ㄴ HTML과 CSS는 이것을 보상해준다. 
+ㄴ content의 크기는 그대로 200px이 고정되고, padding-left의 20Px값을 추가 한다. 즉, 전체 박스의 값은 220px이 된다.
+ㄴ 이것은 기본적으로 일어나는 현상이다.
+-> box-sizing: border-box; = 이러한 기본적인 현상을 거부하며, 박스가 커지는 것을 막는다.
+ㄴ 원래대로 브라우저에게 어떤 박스의 width를 200px로 지정하고 padding-left를 20px지정하면
+그 Content width 값은 더이상 200px이 되지 않고 180px이 된다.
+-> padding이 content를 안으로 스며드는 개념이다. 
+
+border-radius: 바깥 테두리의 경계의 모서시를 둥글게 만든다. 하나의 값을 사용해 원형 모서리를, 두 개의 값을 사용해 타원형 모서리를 적용할 수 있다.
+
+
+- CSS Value
+color: inherit; -> 부모태그의 속성을 상속한다.

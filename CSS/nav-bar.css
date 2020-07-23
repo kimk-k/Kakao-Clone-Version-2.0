@@ -1,0 +1,52 @@
+.nav {
+    position: fixed;
+    width: 100%;
+    background-color: #fcfcfc;
+    padding:20px 50px;
+    /* 
+    padding의 좌우에 50px, width를 100%로 지정해서 더이상 맞지 않는 현상이 일어남
+    */
+    left: 0;
+    bottom: 0;
+    border-top: 1px solid #fcfcfc;
+    font-family: 'Nanum Gothic', sans-serif; 
+    box-sizing: border-box;
+    /* 
+    box-sizing: border-box; 를 씀으로써 박스의 크기가 커지는 것을 막아 content 보존
+    */
+
+}
+
+.nav .nav__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav i {
+    font-size: 20px;
+    align-items: center;
+}
+
+.nav .nav__list-link {
+    position: relative;
+}
+
+.nav__list .nav__list-item .nav__badge {
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    font-size: 15px;
+    color: white;
+    background-color: #dc5d46;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+/* 
+    position: fixed; 는 width, height가 없으면 안 보이게 됨.
+    ㄴ 꼭 width를 설정해줘야할 것
+*/

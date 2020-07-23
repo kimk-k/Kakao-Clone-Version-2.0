@@ -1,0 +1,52 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    align-items: flex-center;
+}
+
+.header .header__title {
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+.header .header__icon {
+    font-size: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.header .header__header-column {
+    display: flex;
+    align-items: center;
+    /* 
+        header__header-column에 display: flex를 줌으로써 자식 태그인 a, h1태그가 옆으로 정렬됨.
+        + align: center를 줌으로써 높이 맞춤
+        + 이 css 효과는 다른 곳에서는 적용 안됨 -> 옆에 다른 엘리먼트가 없기 때문
+    */
+}
+
+.header .header__back-btn {
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+/* 
+
+- justify-content: 주축방향으로 다양하게 아이템들 배치
+관련 이미지 링크: velog.io/@bungouk6829/CSS의-레이아웃-Flexible-Box-Grid
+flex-start: default 값. 자식박스를 부모박스 주축의 시작점으로 배치한다.
+flex-end: 자식박스를 부모박스 주축의 끝점으로 배치한다.
+center: 자식박스를 부모박스의 중앙으로 배치한다.
+space-between: 플렉서블 박스에 빈공간이 있을 때 사용한다. 첫 번째 박스와 마지막 박스는 양쪽 끝에 붙히고, 나머지 박스는 동일한 간격으로 가운데에 정렬된다.
+space-around: 플렉서블 박스에 빈공간이 있을 때 사용한다. 단, 양쪽 끝에 있는 박스의 양옆에도 공간을 둔채 자동 정렬
+
+- align-items: 아이템들의 정렬 높낮이를 의미
+관련 이미지 링크: velog.io/@bungouk6829/CSS의-레이아웃-Flexible-Box-Grid
+flex-start: 맨 위를 기준으로 정렬
+center: 서로의 중앙을 라인으로 정렬
+stretch: default 값
+flex-end: 맨 아래 끝점에 배치
+baseline: 자식박스들을 교차축의 시작점에 배치되는 자식박스의 글자 베이스라인에 맞춰 배치
+*/
