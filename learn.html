@@ -66,6 +66,37 @@ inherit: 부모 요소의 속성값을 상속 받음
 
 border-radius: 바깥 테두리의 경계의 모서시를 둥글게 만든다. 하나의 값을 사용해 원형 모서리를, 두 개의 값을 사용해 타원형 모서리를 적용할 수 있다.
 
+box-shadow: 해당 박스에 그림자 효과
+ex) box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+첫 번째: 수평
+두 번째: 수직
+세 번째: 블러 효과 blur
+네 번째: 색상
+
+outline: input을 눌렀을 때 input을 눌렀을 때 border 끝에 눌렸다는 표시
+none: 그것을 없앰
+
+text-transform: text에 효과
+uppercase: 대문자로 바꿈
+lowercase: 소문자로 바꿈 
+ㄴ 인쇄 식자공들이 소문자 활자를 아래쪽 상자에 담고, 대문자 활자를 위쪽 상자에 담았기 때문
+capitalize: 단어 앞글자만 대문자로 바꿈
+
 
 - CSS Value
 color: inherit; -> 부모태그의 속성을 상속한다.
+
+- fixed가 적용된 container를 가운데에 정렬하는 법
+margin: 0 auto;
+left: 0;
+right: 0;
+
+-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+
+
+    [유용한 사이트]
+subtle patterns: 다양한 패턴 효과
+
+    [공부]
+text는 span안에 있어야 문제 없이 css 효과를 받을 수 있다.
+span 박스는 content의 박스 크기만 가지고 있기 떄문에 margin값을 무시한다.
